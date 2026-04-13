@@ -1,0 +1,46 @@
+<!-- 
+This program is the landing/starting page of the Ripple Risk website! It contains the webpage title, a background of a ripple, and
+a textbox for the user to enter their zipcode to check their risk of living in a flood prone zone.  
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Ripple Risk - Flood Zone Checker!</title>
+</head>
+<body>
+    
+   <nav>
+    <p id="logo">Ripple Risk</p>
+    <ul id="pages">
+      <li><a href="beforeFlood.html">Before</a></li>
+      <li><a href="duringFlood.html">During</a></li>
+      <li><a href="afterFlood.html">After</a></li>
+    </ul>
+   </nav>
+
+    <p>FEMA Flood Data • Know Your Risk</p>
+    <p id="info1">Enter your zip code to check your official FEMA flood zone</p>
+    <p id="info2">and get safety tips based on the risk level</p>
+
+    <div id="input-box">
+        <input
+            id="enterZip"
+            type="text"
+            placeholder="Enter ZIP code"
+        />
+
+        <button id="continue">
+            Check Risk
+        </button>
+    </div>
+
+    <p id="result"></p>
+
+    <h1 id = "header1"> What Does Your Zone Mean? </h1>
+    <h2></h2>
+
+    <script src="index.js"></script>
+</body>
+</html>

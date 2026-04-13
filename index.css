@@ -1,0 +1,117 @@
+/* ── PAGE ── */
+body {
+    background-color: rgb(10,22,40);
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 32px;
+    display: flex;
+}
+
+#logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+#pages {
+    display: flex;
+    color: lightgray;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 770px;    
+    list-style: none;
+    gap: 100px;
+}
+
+#pages a {
+    color: lightgray;
+    text-decoration: none;
+    white-space: nowrap;/* removes underline */
+}
+
+#pages a:hover {
+    color: rgb(48, 168, 224);
+}
+/* ── TAGLINE TEXT ── */
+p {
+    color: rgb(48, 168, 224);
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+#info1, #info2{
+    color: lightgrey;
+}
+
+#info2{
+    margin-bottom: 20px;
+}
+/* ── INPUT BOX CONTAINER ── */
+#input-box {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(46, 168, 224, 0.3);
+    border-radius: 20px;
+    padding: 36px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 420px;
+}/* ── ZIP INPUT ── */
+#enterZip {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(46, 168, 224, 0.25);
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+#enterZip::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#enterZip:focus {
+    border-color: rgb(48, 168, 224);
+    background: rgba(46, 168, 224, 0.08);
+}/* ── BUTTON ── */
+#continue {
+    background: rgb(48, 168, 224);
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(10,22,40);
+}
+
+#continue:hover {
+    background: rgb(128, 212, 248);
+}/* ── RESULT TEXT ── */
+#result {
+    margin-top: 24px;
+    font-size: 16px;
+    color: rgb(128, 212, 248);
+    letter-spacing: 1px;
+}
+
+#header1 {
+    margin-top: 40px;
+    font-size: 40px;
+}
