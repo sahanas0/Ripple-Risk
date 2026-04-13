@@ -1,46 +1,115 @@
 <!-- 
-This program is the landing/starting page of the Ripple Risk website! It contains the webpage title, a background of a ripple, and
-a textbox for the user to enter their zipcode to check their risk of living in a flood prone zone.  
+This program is the landing/starting page of the Ripple Risk website! It contains the webpage title, a textbox for the user
+to input their zip code, and information underneath that explains what each floodzone means. 
 -->
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="index.css" />
     <title>Ripple Risk - Flood Zone Checker!</title>
-</head>
-<body>
-    
-   <nav>
-    <p id="logo">Ripple Risk</p>
-    <ul id="pages">
-      <li><a href="beforeFlood.html">Before</a></li>
-      <li><a href="duringFlood.html">During</a></li>
-      <li><a href="afterFlood.html">After</a></li>
-    </ul>
-   </nav>
+  </head>
+  <body>
 
-    <p>FEMA Flood Data • Know Your Risk</p>
+    <!-- Creating the nav bar where the user can go to the home page or the before/during/after flood info pages. I 
+     created an unordered list and then removed the bullet points with CSS -->
+    <nav>
+      <p id="logo">Ripple Risk</p>
+      <ul id="pages">
+        <li><a href="index.html">Check your Zone</a></li>
+        <li><a href="beforeFlood.html">Before</a></li>
+        <li><a href="duringFlood.html">During</a></li>
+        <li><a href="afterFlood.html">After</a></li>
+      </ul>
+    </nav>
+
+    <p id="intro">FEMA Flood Data | Know Your Risk</p>
     <p id="info1">Enter your zip code to check your official FEMA flood zone</p>
     <p id="info2">and get safety tips based on the risk level</p>
 
+    <!-- Input box for the user to check the impact of their zip code -->
     <div id="input-box">
-        <input
-            id="enterZip"
-            type="text"
-            placeholder="Enter ZIP code"
-        />
-
-        <button id="continue">
-            Check Risk
-        </button>
+      <input id="enterZip" type="text" placeholder="Enter ZIP code" />
+      <button id="continue">Check Risk</button>
     </div>
 
     <p id="result"></p>
 
-    <h1 id = "header1"> What Does Your Zone Mean? </h1>
-    <h2></h2>
+    <h1 id="header1">What Does Your Zone Mean?</h1>
+
+    <!--I got this information from https://jobs.utah.gov/housing/environmentalreview/docs/femafloodzone.pdf and 
+    https://www.floodprice.com/fema-flood-zone-map?gad_source=1&gad_campaignid=23437009863&gbraid=0AAAAABmG_CsrdzfqfO_-E_Sug8MnjM1pd&gclid=CjwKCAjwhe3OBhABEiwA6392zEYU9qC9S8eri6dWLvVSN1hoxQPoRFEEbZM_vHU1Kg5L9bBgOnl4axoCqnEQAvD_BwE
+    -->
+
+    <h1 id="moderateToLow">Moderate to Low Risk</h1>
+
+    <h2>Zones B and X</h2>
+    <h3>
+      These areas are between the "100-year flood" and "500-year flood" zones.
+      Flooding doesn't happen often, but it is still possible. Some of
+      these areas are protected by levees which are big walls that hold back water.
+    </h3>
+
+    <h2>Zone C</h2>
+    <h3>
+      These are the safest zones! They're outside the main flood areas and are
+      well protected. Small puddles or drainage issues might form after
+      heavy rain, but serious flooding is very unlikely here.
+    </h3>
+
+    <h1 id="highRisk">High Risk</h1>
+
+    <h2>Zone A</h2>
+    <h3>
+      There is a 1% chance of flooding every single year which might sound
+      small, but over 30 years that adds up to a 1 in 4 chance. If you have a
+      mortgage in this zone, the government requires you to have flood
+      insurance.
+    </h3>
+
+    <h2>Zone AE</h2>
+    <h3>
+      Same as Zone A, but scientists have done more detailed studies here. They
+      know exactly how high the water could get during a flood. This is one of
+      the most common high-risk zones.
+    </h3>
+
+    <h2>Zones AH and AO</h2>
+    <h3>
+      These zones flood in shallow water, usually only 1-3 feet deep. AH
+      zones flood like a pond, and AO zones flood in moving sheets of water,
+      like a slow river spreading across flat land.
+    </h3>
+
+    <h2>Zone AR</h2>
+    <h3>
+      This zone is temporarily high-risk because a levee or dam nearby is being
+      built or repaired. Once the construction is done, the flood risk should go
+      back down.
+    </h3>
+
+    <h2>Zone A99</h2>
+    <h3>
+      A flood control system is being built here that will protect
+      this area. Until it's finished, it will be considered high
+      risk.
+    </h3>
+
+    <h2>Zones V and VE</h2>
+    <h3>
+      These are coastal high-risk zones near oceans or large lakes. They face
+      flooding by very strong waves. These are some of the most
+      dangerous flood zones.
+    </h3>
+
+    <h1 id="undetermined">Unknown Risk</h1>
+
+    <h2>Zone D</h2>
+    <h3>
+      Nobody has studied this area closely enough to know its flood risk yet. Flood insurance
+      is available but not required here.
+    </h3>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
