@@ -1,0 +1,129 @@
+/* This program controls the styling for the "During the Flood" page */
+
+/* Background */
+body {
+    background-color: rgb(10, 22, 40);
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Top nav bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 32px;
+    display: flex;
+    background-color: rgb(10, 22, 40);
+}
+
+/* Top left title of the page */
+#logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+/* Overall nav bar content (before, during, after pages) */
+#pages {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    gap: 48px;
+    padding: 0;
+    margin-left: 800px; 
+}
+
+/* Specific to each nav bar page */
+#pages a {
+    color: lightgray;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* When the user hovers over a nav bar option, it turns light blue */
+#pages a:hover {
+    color: rgb(48, 168, 224);
+}
+
+/* All overall content of the page that is consistent */
+#page-content {
+    margin-top: 120px;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Controls the title, "What should you do during a flood" */
+#header1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Controls specifically the word "During" in the title */
+#accent {
+    color: rgb(221, 68, 68);
+}
+
+/* Creating the grid for the tip cards */
+#tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+/* Designing the card itself */
+.tip-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(221, 68, 68, 0.3);
+    border-radius: 16px;
+    padding: 28px;
+    text-align: left;
+}
+
+/* Title of the card */
+.tip-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    color: white;
+}
+
+/* Content of the card */
+.tip-body {
+    font-size: 14px;
+    color: lightgray;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 24px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Content of the footer */
+#footer-text {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
